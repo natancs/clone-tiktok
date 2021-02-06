@@ -1,5 +1,3 @@
-import image from '../anime-armin-arlert-shingeki-no-kyojin-eren-jeager-wallpaper-preview.jpg'
-
 const theme = {
   colors: {
     background: '#121214',

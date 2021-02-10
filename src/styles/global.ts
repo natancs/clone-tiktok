@@ -1,6 +1,11 @@
 import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
+  @font-face {
+    font-family: 'sofiapro';
+    src: url('/sofiapro.ttf') format('truetype');
+  }
+
   * {
     margin: 0;
     padding: 0;
@@ -8,8 +13,10 @@ export default createGlobalStyle`
   }
 
   body {
-    background-color: ${props => props.theme.colors.background};
-    color: ${props => props.theme.colors.text};
     font: 400 16px Roboto, sans-serif;
+  }
+
+  html, body {
+    font-family: sofiapro;
   }
 `

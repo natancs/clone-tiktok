@@ -1,4 +1,3 @@
-import React from 'react'
 import Document, { DocumentContext, DocumentInitialProps, Html, Main, NextScript, Head } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
@@ -39,11 +38,6 @@ export default class MyDocument extends Document {
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"
-          />
-
-          <link
-            rel="icon"
-            href="https://rocketseat.com.br/favicon.ico"
           />
 
         </Head>

@@ -1,20 +1,24 @@
 /* eslint-disable no-use-before-define */
-import React from 'react'
 import Head from 'next/head'
+import Layout from '../components/Layout'
 
-const Home: React.FC = () => {
+import Feed from '../components/Feed'
+import Suggestions from '../components/Suggestions'
+
+export default function Index({ posts = [] }) {
   return (
     <div>
       <Head>
-        <title>React Setup</title>
+        <title>TikTok</title>
       </Head>
 
-      <main>
+      <Layout>
+        <Feed posts={posts} />
+        <Suggestions>
 
-        <h1>Hello World</h1>
-      </main>
+        </Suggestions>
+      </Layout>
+
     </div>
   )
 }
-
-export default Home

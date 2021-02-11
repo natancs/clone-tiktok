@@ -14,9 +14,9 @@ export default function Index({ posts = [] }) {
 
       <Layout>
         <Feed posts={posts} />
-        <Suggestions>
+        {/* <Suggestions>
 
-        </Suggestions>
+        </Suggestions> */}
       </Layout>
 
     </div>
